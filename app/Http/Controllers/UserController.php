@@ -26,4 +26,9 @@ class UserController
 
     }
 
+    public function show(){
+        return redirect()
+            ->action('UserController@index');
+    }
+
 }
