@@ -6,7 +6,7 @@
                     <div class="panel-heading">Example Component</div>
 
                     <div class="panel-body">
-                        Hello, I'm an example component!
+                        Call of Duty, I'm an example component!
                     </div>
                 </div>
             </div>

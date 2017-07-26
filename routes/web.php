@@ -15,7 +15,7 @@
 
 Route::get('/', function () {
 
-    return view('child');
+    return view('layouts.app');
 });
 
 Route::get('user/show', [

@@ -8,8 +8,9 @@
 
         @show
 
-        <div class="container">
-            @yield('content')
+        <div id="app" class="container">
+            <p>hello</p>
+            <example></example>
         </div>
 
         <script src="/js/app.js"></script>
