@@ -12,11 +12,15 @@
 */
 
 
-
 Route::get('/', function () {
 
-    return view('layouts.app');
+    return view('welcome');
 });
+
+Route::get('/home', function () {
+
+    return view('home');
+})->middleware('auth');
 
 Route::get('user/show', [
     'uses' => 'UserController@show',
@@ -29,12 +33,9 @@ Route::get('user/index', [
 ]);
 
 
-Route::get('home', function () {
 
-    return response('Hello World', 200)
-                ->header('Content-Type', 'text/plain')
-                ->cookie('name', 'rashid', 1)
-                ->cookie('username', 'mrashidcit', 1);
 
-});
+
+Auth::routes();
+
 
